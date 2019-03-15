@@ -1,6 +1,8 @@
-# env
-starting uwsgi fastrouter
+# env : testing examples from uWSGI Documentation, Release 2.0
 
+
+starting uwsgi fastrouter
+uwsgi --fastrouter 127.0.0.1:4343 --fastrouter-use-code-string 0:ser.py:get
 
 if fastrouter not set (as it is at this moment):
 uwsgi --ini ser.ini
