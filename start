@@ -10,3 +10,16 @@ python uwsgiconfig.py --build core
 virtualenv myenv
 ./myenv/bin/pip install flask
 ./myenv/bin/pip install -r requirements.txt
+
+
+....
+
+
+
+chown -R foo:foo foo /etc/uwsgi/
+chown foo:foo foo /home/jelena/myuwsgi/clientfoo.ini
+chown -R foo:foo foo /run/uwsgi/
+
+chown -R bar:bar foo /etc/uwsgi/
+chown bar:bar foo /home/jelena/myuwsgi/clientbar.ini
+chown -R bar:bar foo /run/uwsgi/
