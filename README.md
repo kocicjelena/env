@@ -1,0 +1,2 @@
+# env
+starting uwsgi fastrouter
