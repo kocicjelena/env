@@ -1,0 +1,12 @@
+apt-get install build-essential python
+apt-get install python-dev
+pip install https://projects.unbit.it/downloads/uwsgi-lts.tar.gz
+wget https://projects.unbit.it/downloads/uwsgi-latest.tar.gz
+tar zxvf uwsgi-latest.tar.gz
+cd <dir>
+make
+python uwsgiconfig.py --plugin plugins/python core
+python uwsgiconfig.py --build core
+virtualenv myenv
+./myenv/bin/pip install flask
+./myenv/bin/pip install -r requirements.txt
